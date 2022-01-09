@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Image Gallary</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+<style>
+    .text-indigo-600 {
+    --tw-text-opacity: 1;
+    color: rgba(79,70,229,var(--tw-text-opacity));
+    background-color: transparent;
+}
+.grid {
+    display: block;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+</style>
+</head>
+<body>
+     <section
+      class="flex flex-col justify-center antialiased bg-gray-900 text-gray-200 min-h-screen"
+    >
+<!-- partial:index.partial.html -->
+<div class="grid grid-cols-12 w-full lg:max-w-7xl mx-auto lg:p-4">
+  <div class="col-span-12 lg:col-span-6 lg:mr-2">
+    <div class="transition-all duration-1000 ease-in-out w-full"
+         x-data="ProductGallery"
+         x-init="init($el); $watch('activeImage', value => scroll());"
+         :class="{ 'fixed top-0 bottom-0 right-0 left-0 z-50 w-screen h-screen overflow-hidden bg-white flex flex-col gap-4 p-6': isOpen }">
+
+    <div class="text-right" x-show="isOpen" x-cloak>
+        <a href="#" @click.prevent="toggleImage">
+          <i class="fas fa-times text-2xl text-indigo-600"></i>
+        </a>
+    </div>
+
+      <ul class="flex flex-grow-1 flex-nowrap overflow-x-scroll whitespace-nowrap snap snap-x snap-mandatory no-scrollbar scroll-behavior-smooth pb-6" @wheel="mousewheelEvent($event)">
+        <template x-for="(image, i) in images" :key="image">
+          <li class="w-full flex-shrink-0 snap-start">
+            <a href="#" @click.prevent="if(!isOpen){toggleImage()}">
+              <img :src="image.url" class="m-auto max-h-full max-w-full">
+            </a>
+          </li>
+        </template>
+      </ul>
+
+    <div class="m-auto max-w-full">
+        <div class="flex" x-show="images.length>1" x-cloak>
+            <a class="h-28 flex-grow-0 text-indigo-600 inline-flex items-center text-xl bg-white p-4" href="#"
+               @click.prevent="prev">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <ul class="flex flex-grow-1 flex-nowrap overflow-x-scroll whitespace-nowrap snap snap-x snap-mandatory no-scrollbar scroll-behavior-smooth">
+                <template x-for="(image, i) in images" :key="image">
+                    <li class="w-28 flex-shrink-0 snap-start  mx-1" @wheel="mousewheelEvent($event)">
+                        <a class="inline-block border-4" href="#" @click.prevent="activeImage=i"
+                           :class="{'border-indigo-600': activeImage==i, 'border-white': activeImage!=i}">
+                            <img :src="image.thumb" class="" height="150" width="150">
+                        </a>
+                    </li>
+                </template>
+            </ul>
+            <a class="h-28 flex-grow-0 inline-flex items-center text-xl text-indigo-600 bg-white p-4" href="#"
+               @click.prevent="next">
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+</div>
+<br>
+    <script src="https://utteranc.es/client.js"
+        repo="Anuragmourya975/Blogsite"
+        issue-term="pathname"
+        theme="dark-blue"
+        crossorigin="anonymous"
+        async>
+</script>
+</section>  
+ <div
+      x-show="open"
+      class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60"
+      x-data="{ open: true }"
+    >
+      <div
+        class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between"
+      >
+        <div>
+          👉
+          <a
+            class="hover:underline ml-1"
+            href="https://cruip.com/?ref=codepen-cruip-blog-post-hover"
+            target="_blank"
+            >Download the app</a
+          >
+        </div>
+        <button
+          class="text-gray-500 hover:text-gray-400 ml-5"
+          @click="open = false"
+        >
+          <span class="sr-only">Close</span>
+          <svg class="w-4 h-4 flex-shrink-0 fill-current" viewBox="0 0 16 16">
+            <path
+              d="M12.72 3.293a1 1 0 00-1.415 0L8.012 6.586 4.72 3.293a1 1 0 00-1.414 1.414L6.598 8l-3.293 3.293a1 1 0 101.414 1.414l3.293-3.293 3.293 3.293a1 1 0 001.414-1.414L9.426 8l3.293-3.293a1 1 0 000-1.414z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.2/alpine.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

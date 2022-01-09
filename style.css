@@ -9,7 +9,8 @@ section {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
-[x-cloak] {
+/* image gallary */
+*/ [x-cloak] {
   display: none;
 }
 body {
@@ -54,7 +55,4 @@ body {
 .snap-start {
   scroll-snap-align: start;
 }
-.utterances .timeline-header em {
-  font-weight: 400;
-  display: none;
-}
+/* slider */
