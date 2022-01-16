@@ -56,3 +56,8 @@ body {
   scroll-snap-align: start;
 }
 /* slider */
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-bottom: 15px;
+}

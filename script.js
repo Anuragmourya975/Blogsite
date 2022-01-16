@@ -1,51 +1,51 @@
 var images = [
   {
-    url: "https://source.unsplash.com/gKXKBY-C-Dk/1920x1080",
-    thumb: "https://source.unsplash.com/gKXKBY-C-Dk/400x400",
+    url: "./d1.jpg",
+    thumb: "./d1.jpg",
   },
   {
-    url: "https://source.unsplash.com/9UUoGaaHtNE/1920x1080",
-    thumb: "https://source.unsplash.com/9UUoGaaHtNE/400x400",
+    url: "./d2.jpg",
+    thumb: "./d2.jpg",
   },
   {
-    url: "https://source.unsplash.com/w2DsS-ZAP4U/1920x1080",
-    thumb: "https://source.unsplash.com/w2DsS-ZAP4U/400x400",
+    url: "./d3.jpg",
+    thumb: "./d3.jpg",
   },
   {
-    url: "https://source.unsplash.com/cWOzOnSoh6Q/1920x1080",
-    thumb: "https://source.unsplash.com/cWOzOnSoh6Q/400x400",
+    url: "./d4.jpg",
+    thumb: "./d4.jpg",
   },
   {
-    url: "https://source.unsplash.com/NodtnCsLdTE/1920x1080",
-    thumb: "https://source.unsplash.com/NodtnCsLdTE/400x400",
+    url: "./d5.jpg",
+    thumb: "./d5.jpg",
   },
   {
-    url: "https://source.unsplash.com/eMzblc6JmXM/1920x1080",
-    thumb: "https://source.unsplash.com/eMzblc6JmXM/400x400",
+    url: "./d6.jpg",
+    thumb: "./d6.jpg",
   },
   {
-    url: "https://source.unsplash.com/so5nsYDOdxw/1920x1080",
-    thumb: "https://source.unsplash.com/so5nsYDOdxw/400x400",
+    url: "./d7.jpg",
+    thumb: "./d7.jpg",
   },
   {
-    url: "https://source.unsplash.com/GtwiBmtJvaU/1920x1080",
-    thumb: "https://source.unsplash.com/GtwiBmtJvaU/400x400",
+    url: "./d8.jpg",
+    thumb: "./d8.jpg",
   },
   {
-    url: "https://source.unsplash.com/YCPkW_r_6uA/1920x1080",
-    thumb: "https://source.unsplash.com/YCPkW_r_6uA/400x400",
+    url: "./d1.jpg",
+    thumb: "./d1.jpg",
   },
   {
-    url: "https://source.unsplash.com/IbPxGLgJiMI/1920x1080",
-    thumb: "https://source.unsplash.com/IbPxGLgJiMI/400x400",
+    url: "./d2.jpg",
+    thumb: "./d2.jpg",
   },
   {
-    url: "https://source.unsplash.com/Hd7vwFzZpH0/1920x1080",
-    thumb: "https://source.unsplash.com/Hd7vwFzZpH0/400x400",
+    url: "./d3.jpg",
+    thumb: "./d3.jpg",
   },
   {
-    url: "https://source.unsplash.com/0F7GRXNOG7g/1920x1080",
-    thumb: "https://source.unsplash.com/0F7GRXNOG7g/400x400",
+    url: "./d4.jpg",
+    thumb: "./d4.jpg",
   },
 ];
 
