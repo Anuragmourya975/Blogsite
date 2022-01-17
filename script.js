@@ -1,51 +1,51 @@
 var images = [
   {
-    url: "./d1.jpg",
-    thumb: "./d1.jpg",
+    url: "./images/d1.jpg",
+    thumb: "./images/d1.jpg",
   },
   {
-    url: "./d2.jpg",
-    thumb: "./d2.jpg",
+    url: "./images/d2.jpg",
+    thumb: "./images/d2.jpg",
   },
   {
-    url: "./d3.jpg",
-    thumb: "./d3.jpg",
+    url: "./images/d3.jpg",
+    thumb: "./images/d3.jpg",
   },
   {
-    url: "./d4.jpg",
-    thumb: "./d4.jpg",
+    url: "./images/d4.jpg",
+    thumb: "./images/d4.jpg",
   },
   {
-    url: "./d5.jpg",
-    thumb: "./d5.jpg",
+    url: "./images/d5.jpg",
+    thumb: "./images/d5.jpg",
   },
   {
-    url: "./d6.jpg",
-    thumb: "./d6.jpg",
+    url: "./images/d6.jpg",
+    thumb: "./images/d6.jpg",
   },
   {
-    url: "./d7.jpg",
-    thumb: "./d7.jpg",
+    url: "./images/d7.jpg",
+    thumb: "./images/d7.jpg",
   },
   {
-    url: "./d8.jpg",
-    thumb: "./d8.jpg",
+    url: "./images/d8.jpg",
+    thumb: "./images/d8.jpg",
   },
   {
-    url: "./d1.jpg",
-    thumb: "./d1.jpg",
+    url: "./images/d1.jpg",
+    thumb: "./images/d1.jpg",
   },
   {
-    url: "./d2.jpg",
-    thumb: "./d2.jpg",
+    url: "./images/d2.jpg",
+    thumb: "./images/d2.jpg",
   },
   {
-    url: "./d3.jpg",
-    thumb: "./d3.jpg",
+    url: "./images/d3.jpg",
+    thumb: "./images/d3.jpg",
   },
   {
-    url: "./d4.jpg",
-    thumb: "./d4.jpg",
+    url: "./images/d4.jpg",
+    thumb: "./images/d4.jpg",
   },
 ];
 
